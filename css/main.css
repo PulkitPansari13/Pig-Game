@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #7f00ff;
+  background: -webkit-linear-gradient(to left, #e100ff, #7f00ff);
+  background: linear-gradient(to top left, #e100ff 0%, #7f00ff 100%);
+  font-family: "Roboto Mono", monospace;
+}
+
+#app {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main {
+  position: relative;
+  display: flex;
+  height: 35em;
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0px 8px 20px 5px rgb(0 0 0 / 25%);
+  border-radius: 10px;
+}
+
+.playercard {
+  display: flex;
+  padding: 6em;
+  flex: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+.playercard-active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.winner {
+  background-color: rgb(46, 45, 45);
+  color: white;
+}
+
+.name {
+  margin-bottom: 5em;
+}
+
+.pname {
+  margin-bottom: 0.6em;
+  font-size: 2.4em;
+}
+
+.score {
+  font-size: 3.4em;
+  color: crimson;
+}
+
+.current {
+  width: 75%;
+  color: white;
+  padding: 15px;
+  height: 25%;
+  background-color: #7f00ff;
+  border-radius: 5px;
+}
+
+.cscore {
+  margin-top: 5px;
+  font-size: 1.5em;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 10px 15px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgb(0 0 0 / 10%);
+  transition: all 0.2s;
+  vertical-align: baseline;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 5px 8px rgb(0 0 0 / 10%);
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.ng {
+  top: 8%;
+}
+
+.rd {
+  bottom: 26%;
+}
+
+.hd {
+  bottom: 16%;
+  /* width: 20%; */
+}
+
+.hidden {
+  display: none;
+}
